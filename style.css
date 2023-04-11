@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Poppins&display=swap');
+
+:root {
+    --cor-total: black;
+    --cor-primaria: #5B8FB9;
+    --cor-segundaria: #03001C;
+    --cor-tercearia: #301E67;
+    --fonte-principal: 'Chivo Mono', monospace;
+    --fonte-segundaria: 'Poppins', 'sans-serif';
+    --cor-hover: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+}
+
+section {
+    position: relative;
+    padding: 60px;
+}
+
+.pagina-inicial {
+    background-color: var(--cor-total);
+    padding: 6% 25%;
+    box-sizing: border-box;
+    color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagina-inicial-conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.pagina-inicial-conteudo-texto {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+}
+
+.pagina-inicial-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.pagina-inicial-link-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-primaria);
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: var(--fonte-segundaria);
+}
+
+.pagina-inicial-link-links:hover {
+    background-color: var(--cor-hover);
+}
+
+.pagina-inicial-cadastro-texto {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0.5rem;
+}
+
+form {
+    border: 2px solid var(--cor-tercearia);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    position: relative;
+    background-color: var(--cor-tercearia);
+    color: var(--cor-segundaria);
+    border: 2px solid --cor-primaria;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+    content: "\2022";
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    font-size: 18px;
+    line-height: 0;
+}
+
+.configuração-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--cor-total);
+    border: 2px solid var(--cor-primaria);
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 15px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-segundaria);
+}
+
+.configuração-button:hover {
+    background-color: var(--cor-hover);
+}
+
+.background-massa{
+    background-image: url(imagens/qissolektmj.png);
+    background-color: var(--cor-total);
+}
+
+.amarelo {
+    color: yellow;
+}
